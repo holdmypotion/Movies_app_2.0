@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'login/app.css' %}" />
+    <title>Login Page</title>
+  </head>
+
+  <body>
+
+      <h2>Login Form</h2>
+      <!--Step 1 : Adding HTML-->
+          <div class="container">
+              <form class="site-form" action="index.html" method="post">
+                {{ form }}
+                <input type="submit" value="Signup">
+              </form>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+
+  </body>
+
+</html>
